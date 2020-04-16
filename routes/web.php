@@ -26,9 +26,11 @@ Route::group(['middleware' => ['auth', 'admin']],function(){
     Route::get('Aregister','Admin\DashboardController@registred');
     Route::get('/edit/{id}','Admin\DashboardController@registrededit');
     Route::delete('/delete/{id}','Admin\DashboardController@registredelete');
+    Route::get('/create','Admin\DashboardController@createe');
 
     Route::put('/register-update/{id}','Admin\DashboardController@registreupdate');
-        
+    Route::put('/register-create','Admin\DashboardController@registrecreate');
+
  
 
 });
